@@ -1,15 +1,14 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * isupper - checks for uppercase character
- *
+ * _isupper - checks for uppercase character
+ *@c: parameter
  * Return: 0 (success)
  */
 int _isupper(int c)
 {
-	for (c = 'A'; c <= 'Z'; c++)
+	if (c >= 65 && c <= 90)
 	{
-		_putchar(c);
 		return (1);
 	}
 	else
