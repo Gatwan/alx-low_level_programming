@@ -11,7 +11,7 @@ void more_numbers(void)
 	{
 		for (num1 = 48; num1 < 50; num1++)
 		{
-			for (num2 = 48; num2 < 59; num2++)
+			for (num2 = 48; num2 < 58; num2++)
 			{
 				if (num1 > 48 && num2 > 52)
 				{
@@ -24,6 +24,6 @@ void more_numbers(void)
 				_putchar(num2);
 			}
 		}
-		_putchar('\n')
+		_putchar('\n');
 	}
 }
