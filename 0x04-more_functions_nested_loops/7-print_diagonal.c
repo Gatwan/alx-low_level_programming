@@ -5,7 +5,7 @@
  */
 void print_diagonal(int n)
 {
-	int count, bslash;
+	int count1, count2, bslash;
 
 	bslash = 92;
 
@@ -15,10 +15,14 @@ void print_diagonal(int n)
 	}
 	else
 	{
-		for (count = 0; count < n; count++)
+		for (count1 = 0; count1 < n; count1++)
 		{
-			_putchar(bslash);
-		}
+			for (count2 = 0; count2 < (count1); count2++)
+			{
+			_putchar(' ');
+			}
+		_putchar(bslash);
 		_putchar('\n');
+		}
 	}
 }
