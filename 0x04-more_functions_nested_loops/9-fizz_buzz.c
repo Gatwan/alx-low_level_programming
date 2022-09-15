@@ -10,7 +10,7 @@ int main(void)
 
 	for (FizzBuzz = 1; FizzBuzz <= 100; FizzBuzz++)
 	{
-		if (FizzBuzz == 0)
+		if (FizzBuzz == 100)
 		{
 			printf("Buzz");
 		}
