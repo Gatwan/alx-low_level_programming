@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdio.h>
+
 
 
 /**
@@ -20,9 +20,9 @@ int main(void)
 
 
 
-		        i = 98;
+		        i = 0;
 
-			        printf("%d is positive\n", i);
+			        positive_or_negative(i);
 
 
 
