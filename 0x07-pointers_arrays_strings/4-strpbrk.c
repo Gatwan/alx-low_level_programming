@@ -20,7 +20,7 @@ char *_strpbrk(char *s, char *accept)
 				boolean = 0;
 				break;
 			}
-			a++
+			a++;
 		}
 		if (*s != '\0')
 		{
@@ -30,5 +30,4 @@ char *_strpbrk(char *s, char *accept)
 		{
 			return ('\0');
 		}
-	}
 }
