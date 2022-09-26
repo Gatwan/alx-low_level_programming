@@ -22,12 +22,18 @@ char *_strpbrk(char *s, char *accept)
 			}
 			a++;
 		}
-		if (*s != '\0')
+		if (boolean == 0)
 		{
-			return (s);
+			break;
 		}
-		else
-		{
-			return ('\0');
-		}
+		s++;
+	}
+	if (*s != '\0')
+	{
+		return (s);
+	}
+	else
+	{
+		return ('\0');
+	}
 }
