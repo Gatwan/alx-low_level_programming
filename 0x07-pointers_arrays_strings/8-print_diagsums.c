@@ -13,7 +13,7 @@ void print_diagsums(int *a, int size)
 	diagsum2 = 0;
 	for (g = 0; g < size; g++)
 	{
-		diagsum1 += a[(size = 1) * g];
+		diagsum1 += a[(size + 1) * g];
 	}
 	for (w = 0; w < size; w++)
 	{
