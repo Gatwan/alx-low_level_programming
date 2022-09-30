@@ -9,38 +9,40 @@ void change(int num)
 	int cents;
 
 	cents = 0;
-
 	while (num != 0)
 	{
-		if (num >= 25)
+		while (num != 0)
 		{
-			num -= 25;
-			cents++;
-			break;
-		}
-		else if (num >= 10)
-		{
-			num -= 10;
-			cents++;
-			break;
-		}
+			if (num >= 25)
+			{
+				num -= 25;
+				cents++;
+				break;
+			}
+			else if (num >= 10)
+			{
+				num -= 10;
+				cents++;
+				break;
+			}
 			else if (num >= 5)
-		{
-			num -= 5;
-			cents++;
-			break;
-		}
-		else if (num >= 2)
-		{
-			num -= 2;
-			cents++;
-			break;
-		}
-		else if (num >= 1)
-		{
-			num -= 1;
-			cents++;
-			break;
+			{
+				num -= 5;
+				cents++;
+				break;
+			}
+			else if (num >= 2)
+			{
+				num -= 2;
+				cents++;
+				break;
+			}
+			else if (num >= 1)
+			{
+				num -= 1;
+				cents++;
+				break;
+			}
 		}
 	}
 	printf("%d\n", cents);
