@@ -78,7 +78,7 @@ char **strtow(char *str)
 		return (NULL);
 		}
 
-		for (d = 0; d < letters; d++)
+		for (d = 0; d < lett; d++)
 			pointer[b][d] = str[a++];
 
 		pointer[b][d] = '\0';
