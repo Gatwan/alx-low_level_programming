@@ -10,44 +10,38 @@
 */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	dog_t *nina;
-	int namelen, ownerlen, a;
+	dog_t *pet;
+	int a, b, c;
 
-	if (name == NULL || age < 0 || owner == NULL)
-	return (NULL);
+	pet = malloc(sizeof(dog_t));
 
-	nina = malloc(sizeof(dog_t));
-	if (nina == NULL)
+	if (pet == NULL)
 	{
-		free(nina);
+		free(pet);
 		return (NULL);
 	}
-	for (namelen = 0; name[namelen] != '\0'; namelen++)
+	for (a = 0; name[a]; a++)
+		;
+	for (b = 0; owner[b]; b++)
+		;
+	pet->name = malloc(a + 1);
+	pet->owner = malloc(b + 1);
 
-	for (ownerlen = 0; owner[ownerlen] != '\0'; ownerlen++)
-
-	nina->name = malloc(sizeof(char) * (namelen + 1));
-	if (nina->name == NULL)
+	if (pet->name == NULL || pet->owner == NULL)
 	{
-		free(nina->name);
-		free(nina);
+		free(pet->name), free(pet->owner), free(pet);
 		return (NULL);
 	}
-	for (a = 0; a < namelen; a++)
-	nina->name[a] = name[a];
-	nina->name[a] = '\0';
-	nina->age = age;
-	nina->owner = malloc(sizeof(char) * (ownerlen + 1));
-	if (nina->owner == NULL)
+	for (c = 0; c < a; c++)
 	{
-		free(nina->owner);
-		free(nina->name);
-		free(nina);
-		return (NULL);
+		pet->name[c] = name[c];
 	}
-	for (a = 0; a < ownerlen; ownerlen++)
-	nina->owner[a] = owner[a];
-
-	nina->owner[a] = '\0';
-	return (nina);
+	pet->name[c] = '\0';
+	for (c = 0; c < o; c++)
+	{
+		pet->owner[c] = owner[c];
+	}
+	pet->owner[c] = '\0';
+	pet->age = age;
+	return (pet);
 }
