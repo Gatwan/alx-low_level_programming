@@ -9,19 +9,40 @@
 */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	char *newname = name, *newowner = owner;
-	dog_t nina, *new;
+	dog_t *nina;
+	int namelen, ownerlen, a;
 
-	if (name == NULL || owner == NULL || age < 0)
-	return (NULL);
+	nina = malloc(sizeof(*nina));
+	if (nina == NULL || !(name) || !(owner))
+	{
+		free(nina);
+		return (NULL);
+	}
 
-	nina.name = newname;
-	nina.age = age;
-	nina.owner = newowner;
+	for (namelen = 0; name[namelen]; namelen++)
 
-	new = &nina;
-	if (new == NULL)
-	return (NULL);
+	for (ownerlen = 0; owner[ownerlen]; ownerlen++)
 
-	return (new);
+	nina->name = malloc(namelen + 1);
+	nina->owner = malloc(ownerlen + 1);
+
+	if (!(nina->name) || (nina->owner))
+	{
+		free(nina->name);
+		free(nina->owner);
+		free(nina);
+		return (NULL);
+	}
+
+	for (a = 0; a < namelen; a++)
+		nina->name[a] = name[a];
+	nina->name[a] = '\0';
+
+	nina->age = age;
+
+	for (a = 0; a < ownerlen; a++)
+		nina->owner[a] = owner[a];
+	nina->owner[a] = '\0';
+
+	return (nina);
 }
