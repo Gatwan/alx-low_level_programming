@@ -12,15 +12,23 @@
 */
 int main(int argc, char *argv[])
 {
-	int ans, a, b;
+	int a, b;
+	int (*ans)(int, int);
 
 	if (argc != 4)
 	{
 		printf("Error\n");
 		exit(98);
 	}
-	if (*argv[2] != '+' && *argv[2] != '-' && *argv[2] != '*'
-		&& *argv[2] != '/' && *argv[2] != '%')
+	if (argv[2][1])
+	{
+		printf("Error\n");
+		exit(99);
+	}
+
+	ans = get_op_function(argv[2]);
+
+	if (ans == NULL)
 	{
 		printf("Error\n");
 		exit(99);
@@ -29,15 +37,6 @@ int main(int argc, char *argv[])
 	a = atoi(argv[1]);
 	b = atoi(argv[3]);
 
-	if ((*argv[2] == '/' && b == 0) ||
-		(*argv[2] == '%' && b == 0))
-	{
-		printf("Error\n");
-		exit(100);
-	}
-
-	ans = (int)(get_op_func(argv[2])(a, b));
-
-	printf("%d\n", ans);
+	printf("%d\n", ans(a, b));
 	return (0);
 }
