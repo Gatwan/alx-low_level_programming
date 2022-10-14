@@ -22,11 +22,10 @@ void print_all(const char * const format, ...)
 		{
 			printf(", ");
 			break;
-		}
-			j++;
+		}	j++;
 	}
 	switch (format[i])
-		{
+	{
 		case 'c':
 			printf("%c", va_arg(ap, int)), c = 1;
 			break;
@@ -45,9 +44,7 @@ void print_all(const char * const format, ...)
 			}
 		printf("%s", str);
 		break;
-		}
-	i++;
+		}	i++;
 	}
-	printf("\n");
-	va_end(ap);
+	printf("\n"),	va_end(ap);
 }
