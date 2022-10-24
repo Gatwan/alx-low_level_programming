@@ -1,8 +1,8 @@
 #include "lists.h"
 /**
-*main - function that prints before the main executed
+*before_main - function executed before main function
 */
-int main(void)
+void before_main(void)
 {
 	printf("You're beat! and yet, you must allow");
 	printf(",\nI bore my house upon my back!\n");
