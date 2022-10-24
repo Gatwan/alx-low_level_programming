@@ -1,0 +1,13 @@
+global main
+	extern printf
+
+	mov edx, len
+	mov ecx, msg
+	mov ebx, 1
+	mov eax, 4
+
+	mov eax, 1
+
+section .data
+	msg db "Hello, Holberton" ,10,0
+	len equ $ -msg
