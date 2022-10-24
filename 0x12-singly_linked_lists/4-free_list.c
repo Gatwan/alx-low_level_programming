@@ -6,12 +6,14 @@
 */
 void free_list(list_t *head)
 {
-	struct list_t* tmp;
+	list_t *tmp;
 
-   while (head != NULL)
-    {
-       tmp = head;
-       head = head->next;
-       free(tmp);
-    }
+	while (head)
+	{
+		tmp = head->next;
+		free(head->str);
+		free(head);
+		head = tmp;
+	}
+	free(head);
 }
