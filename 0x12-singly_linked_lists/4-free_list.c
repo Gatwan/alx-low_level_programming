@@ -2,7 +2,7 @@
 /**
 *free_list - function that frees a list
 *
-*@head: list of elements
+*@head: first element
 */
 void free_list(list_t *head)
 {
