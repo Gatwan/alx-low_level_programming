@@ -13,10 +13,9 @@
 7. The prototypes of all your functions and the prototype of the function _putchar should be included in your header file called lists.h
 8. All your header files should be include guarded
 
-|## Tasks   |  Description    |     File Name       |
+|  Tasks    |  Description    |     File Name       |
 |---------  |  -----------    | ------------------- |
 | Task 0    | Print list      | 0-print_listint.c   |
-|---------  | --------------  | ------------------- |
 | Task 1    | List length     | 1-listint_len.c     |
 ### Task 1: List Length
 Write a function that returns the number of elements in a linked list
