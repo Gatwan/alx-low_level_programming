@@ -13,7 +13,11 @@
 7. The prototypes of all your functions and the prototype of the function _putchar should be included in your header file called lists.h
 8. All your header files should be include guarded
 
-## Tasks
+|## Tasks   |  Description    |     File Name       |
+|---------  |  -----------    | ------------------- |
+| Task 0    | Print list      | 0-print_listint.c   |
+|---------  | --------------  | ------------------- |
+
 ### Task 0: Print list
 Write a function that prints all the elements of a list
 1. Prototype: size_t print_listint(const listint_t *h);
