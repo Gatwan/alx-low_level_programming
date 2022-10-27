@@ -17,19 +17,6 @@
 |---------  |  -----------    | ------------------- |
 | Task 0    | Print list      | 0-print_listint.c   |
 | Task 1    | List length     | 1-listint_len.c     |
-### Task 1: List Length
-Write a function that returns the number of elements in a linked list
-1. Prototype: size_t listint_len(const listint_t *h);
-2. File: 1-listint_len.c
+| Task 2    | Add node        | 2-add_nodeint.c     |
+| Task 3    | Add node at the end | 3-add_nodeint_end.c |
 
-### Task 2: Add node
-Write a function that adds a new node at the beginning of a list
-1. Prototype: listint_t *add_nodeint(listint_t **head, const int n);
-2. Return: the address of the new element, or NULL if it failed
-3. File: 2-add_nodeint.c
-
-### Task 3: Add node at the end
-Write a function that adds a new node at the end of a list
-1. Prototype: listint_t *add_nodeint_end(listint_t **head, const int n);
-2. Return: the address of the new element, or NULL if it failed
-3. File: 3-add_nodeint_end.c
