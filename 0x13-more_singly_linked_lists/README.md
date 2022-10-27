@@ -17,14 +17,7 @@
 |---------  |  -----------    | ------------------- |
 | Task 0    | Print list      | 0-print_listint.c   |
 |---------  | --------------  | ------------------- |
-
-### Task 0: Print list
-Write a function that prints all the elements of a list
-1. Prototype: size_t print_listint(const listint_t *h);
-2. Return: the number of nodes
-3. You are allowed to use printf
-4. File: 0-print_listint.c
-
+| Task 1    | List length     | 1-listint_len.c     |
 ### Task 1: List Length
 Write a function that returns the number of elements in a linked list
 1. Prototype: size_t listint_len(const listint_t *h);
