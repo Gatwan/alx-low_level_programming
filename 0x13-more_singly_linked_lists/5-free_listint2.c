@@ -1,0 +1,18 @@
+#include "lists.h"
+/**
+*free_listint2 - function that frees a list
+*
+*@head: first element on the list
+*/
+void free_listint2(listint_t **head)
+{
+	listint_t *list;
+
+	while (*head != NULL)
+	{
+		list = *head;
+		*head = (*head)->next;
+		free(list);
+	}
+	*head = NULL; 
+}
