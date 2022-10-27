@@ -11,21 +11,17 @@
 */
 listint_t *add_nodeint(listint_t **head, const int n)
 {
-	listint_t *pointer, *newnode;
-
-	newnode = malloc(sizeof(listint_t));
-	newnode = n;
-	newnode->next = NULL;
+	listint_t *pointer;
 
 	pointer = malloc(sizeof(listint_t));
-	pointer = n;
-	pointer->next = NULL;
-	newnode->next = pointer;
 
-	while (pointer != NULL)
-	{
-		printf("%d", pointer->n);
-		pointer = pointer->next;
-	}
-	return (pointer);
+	if (pointer == NULL)
+	return (NULL);
+
+	pointer->n = n;
+	pointer->next = *head;
+
+	*head = pointer;
+
+	return (*head);
 }
