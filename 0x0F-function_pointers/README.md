@@ -18,8 +18,8 @@
 ## Files
 All of the following files have been wrtitten in c
 
-| File Name        | Description |
-| ---------        | ----------- |
+| File Name			| Description |
+| --------------------------	| ----------- |
 | 0-print\_name.c | Write a function that prints a name. |
 | 1-array\_iterator.c | Write a function that executes a function given as a parameter on each element of an array. |
 | 2-int\_index.c | Write a function that searches for an integer. |
