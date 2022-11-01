@@ -10,7 +10,7 @@ How to manipulate bits and use bitwise operators
 4. You are not allowed to use global variables
 5. The only C standard library functions allowed are malloc, free and exit. Any use of functions like printf, puts, calloc, realloc etc… is forbidden
 6. You are allowed to use \_putchar
-7. The prototypes of all your functions and the prototype of the function \_putchar should be included in your header file called lists.h
+7. The prototypes of all your functions and the prototype of the function \_putchar should be included in your header file called main.h
 8. All your header files should be include guarded
 
 ## Files
